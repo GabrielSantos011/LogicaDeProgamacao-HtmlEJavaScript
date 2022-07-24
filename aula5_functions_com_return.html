@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function somaDoisNumeros(num1, num2){
+        return num1 + num2;
+    }
+
+    var num1 = 2;
+    var num2 = 3;
+    
+    var resultado = somaDoisNumeros(num1, num2);
+
+    mostra("a soma foi " + resultado)
+</script>
