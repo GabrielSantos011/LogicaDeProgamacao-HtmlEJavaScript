@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Jogar</button>
+
+<script>
+    var segredo = Math.round(Math.random() * 10);
+
+    var input = document.querySelector("input");
+    //coloca o foco na caixa de input
+        input.focus();
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+                input.value = "";
+                input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    //sem o () passando o código para o onClick
+    button.onclick = verifica;
+
+</script>

@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function somaDoisNumeros(num1, num2){
+        return num1 + num2;
+    }
+
+    var num = 0;
+
+    while(num <= 10){
+        mostra(num);
+        num = num + 1;
+    }
+
+    mostra("==========================================")
+
+    for(var multiplicador = 0; multiplicador <= 10; multiplicador++){
+        mostra(7*multiplicador);
+    }
+
+    mostra("==========================================")
+    
+    for(var multiplicador = 0; multiplicador <= 10; multiplicador++){
+        mostra(5*multiplicador);
+        if(multiplicador == 5){
+            mostra("Break");
+            break;
+        }
+    }
+</script>
